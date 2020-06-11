@@ -1,6 +1,6 @@
 # Zaliczenie przedmiotu Wirtualizacja i przetwarzanie w chmurze
 
-Autor: Jakub Kanclerz (nr albumu) (grupa)
+Autor: Jacek Kurek (193613) (WZISS22412IS)
 
 ## Projekt, impplementacja oraz wdrożenie aplikacji w środowisku AWS
 
@@ -20,10 +20,13 @@ Applikacja generująca animację ze zdjęć, wdrożona z wykorzystaniem usług 
 ### Usługi wspomagające realizacje wymagań
 
 * Amazon Cognito -> rejestracja oraz zarządzanie użytkownikami
-* 
-*
-*
-*
+* Simple Email Service -> wysyłanie maila o stworzonej animacji
+* S3 -> przechowywanie plików
+* CloudWatch -> logowanie i pomoc w debugowaniu
+* Simple Queue Service -> kolejka do animacji i notyfikacji 
+* Cloud9 -> IDE
+* Lambda -> tworzenie funkcji do przyjmowania zdjęć, wysyłania do kolejki, tworzenia animacji i wysyłania notyfikacji na maila
+* API Gateway -> API REST do integracji z funkcjami Lambda
 
 ### Charakterysytka modułów aplikacji
 Wykorzystanie technologie, sposób integracji, opis funkcjonalności
